@@ -1,4 +1,5 @@
-var firstName = 'Jayden';
-var age = 21;
+let num = 10;
 
-console.log(firstName + ' ' + age);
+console.log(` ${num} is a number.`);
+
+console.log("done");
