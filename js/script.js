@@ -1,4 +1,8 @@
-var firstName = 'Jayden';
-var age = 21;
+function nameIterate(arr) {
+  for (const name of arr){
+    console.log(name);
+  }
+}
 
-console.log(firstName + ' ' + age);
+const names = ['foo', 'bar', 'baz'];
+nameIterate(names);
