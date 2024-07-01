@@ -1,9 +1,11 @@
 const apiKey = '483a53306eacda4704b24e0d2bddcae4';
 
-const url = `https://api.openweathermap.org/data/2.5/weather?q=atlanta&appid=${apiKey}`;
 
 
-$('.request').on('click', function () {
+$('.form').on('submit', function (e) {
+  e.preventDefault();
+  let city = $('#userInput').val();
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
   fetch(url)
     .then(function (responseObj) {
       const data = responseObj.json();
